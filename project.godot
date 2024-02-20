@@ -15,7 +15,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Tutorial 2"
-run/main_scene="res://scenes/MainLevel.tscn"
+run/main_scene="res://scenes/level2/SecondLevel.tscn"
 config/icon="res://assets/icon.png"
 
 [input]

@@ -1,0 +1,249 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://scenes/level2/GreenShip.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/level2/SnowPlatform.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/ObjectiveArea.gd" type="Script" id=3]
+[ext_resource path="res://scenes/level2/GameplayArea.gd" type="Script" id=4]
+[ext_resource path="res://scenes/level2/HUD.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/download.jpeg" type="Texture" id=6]
+[ext_resource path="res://assets/bg.png" type="Texture" id=7]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 512, 301 )
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 69.375, 39.5 )
+
+[node name="SecondLevel" type="Node"]
+
+[node name="CanvasLayer" parent="." instance=ExtResource( 5 )]
+
+[node name="GameplayArea" type="Area2D" parent="."]
+position = Vector2( 0, 8 )
+script = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameplayArea"]
+position = Vector2( 512, 291 )
+shape = SubResource( 2 )
+
+[node name="GreenShip" parent="." instance=ExtResource( 1 )]
+position = Vector2( 64, 472 )
+rotation = 1.5708
+gravity_scale = 0.0
+
+[node name="ObjectiveArea" type="Area2D" parent="."]
+position = Vector2( 432, 472 )
+script = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectiveArea"]
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="ObjectiveArea"]
+scale = Vector2( 0.634831, 0.245583 )
+texture = ExtResource( 6 )
+
+[node name="OuterWall" type="Node2D" parent="."]
+
+[node name="SnowPlatform8" parent="OuterWall" instance=ExtResource( 2 )]
+position = Vector2( -40, 496 )
+
+[node name="SnowPlatform9" parent="OuterWall" instance=ExtResource( 2 )]
+position = Vector2( -40, 424 )
+
+[node name="SnowPlatform10" parent="OuterWall" instance=ExtResource( 2 )]
+position = Vector2( -40, 280 )
+
+[node name="SnowPlatform11" parent="OuterWall" instance=ExtResource( 2 )]
+position = Vector2( -40, 208 )
+
+[node name="SnowPlatform12" parent="OuterWall" instance=ExtResource( 2 )]
+position = Vector2( -40, 136 )
+
+[node name="SnowPlatform13" parent="OuterWall" instance=ExtResource( 2 )]
+position = Vector2( -40, 64 )
+
+[node name="SnowPlatform14" parent="OuterWall" instance=ExtResource( 2 )]
+position = Vector2( 40, -40 )
+
+[node name="SnowPlatform15" parent="OuterWall" instance=ExtResource( 2 )]
+position = Vector2( 112, -40 )
+
+[node name="SnowPlatform16" parent="OuterWall" instance=ExtResource( 2 )]
+position = Vector2( 184, -40 )
+
+[node name="SnowPlatform17" parent="OuterWall" instance=ExtResource( 2 )]
+position = Vector2( 256, -40 )
+
+[node name="SnowPlatform18" parent="OuterWall" instance=ExtResource( 2 )]
+position = Vector2( 328, -40 )
+
+[node name="SnowPlatform19" parent="OuterWall" instance=ExtResource( 2 )]
+position = Vector2( 400, -40 )
+
+[node name="SnowPlatform20" parent="OuterWall" instance=ExtResource( 2 )]
+position = Vector2( 472, -40 )
+
+[node name="SnowPlatform21" parent="OuterWall" instance=ExtResource( 2 )]
+position = Vector2( 544, -40 )
+
+[node name="SnowPlatform22" parent="OuterWall" instance=ExtResource( 2 )]
+position = Vector2( 616, -40 )
+
+[node name="SnowPlatform23" parent="OuterWall" instance=ExtResource( 2 )]
+position = Vector2( 688, -40 )
+
+[node name="SnowPlatform24" parent="OuterWall" instance=ExtResource( 2 )]
+position = Vector2( 760, -40 )
+
+[node name="SnowPlatform25" parent="OuterWall" instance=ExtResource( 2 )]
+position = Vector2( 832, -40 )
+
+[node name="SnowPlatform26" parent="OuterWall" instance=ExtResource( 2 )]
+position = Vector2( 904, -40 )
+
+[node name="SnowPlatform27" parent="OuterWall" instance=ExtResource( 2 )]
+position = Vector2( 976, -40 )
+
+[node name="SnowPlatform28" parent="OuterWall" instance=ExtResource( 2 )]
+position = Vector2( 1064, 40 )
+
+[node name="SnowPlatform29" parent="OuterWall" instance=ExtResource( 2 )]
+position = Vector2( 1064, 112 )
+
+[node name="SnowPlatform30" parent="OuterWall" instance=ExtResource( 2 )]
+position = Vector2( 1064, 184 )
+
+[node name="SnowPlatform31" parent="OuterWall" instance=ExtResource( 2 )]
+position = Vector2( 1064, 256 )
+
+[node name="SnowPlatform32" parent="OuterWall" instance=ExtResource( 2 )]
+position = Vector2( 1064, 328 )
+
+[node name="SnowPlatform33" parent="OuterWall" instance=ExtResource( 2 )]
+position = Vector2( 1064, 400 )
+
+[node name="SnowPlatform34" parent="OuterWall" instance=ExtResource( 2 )]
+position = Vector2( 1064, 472 )
+
+[node name="SnowPlatform35" parent="OuterWall" instance=ExtResource( 2 )]
+position = Vector2( 1064, 544 )
+
+[node name="SnowPlatform36" parent="OuterWall" instance=ExtResource( 2 )]
+position = Vector2( 984, 640 )
+
+[node name="SnowPlatform37" parent="OuterWall" instance=ExtResource( 2 )]
+position = Vector2( 984, 640 )
+
+[node name="SnowPlatform38" parent="OuterWall" instance=ExtResource( 2 )]
+position = Vector2( 912, 640 )
+
+[node name="SnowPlatform39" parent="OuterWall" instance=ExtResource( 2 )]
+position = Vector2( 912, 640 )
+
+[node name="Button" type="Button" parent="."]
+margin_right = 88.0
+margin_bottom = 40.0
+text = "Reset"
+
+[node name="Obstacle" type="Node2D" parent="."]
+
+[node name="SnowPlatform" parent="Obstacle" instance=ExtResource( 2 )]
+position = Vector2( 32, 568 )
+
+[node name="SnowPlatform2" parent="Obstacle" instance=ExtResource( 2 )]
+position = Vector2( 104, 568 )
+
+[node name="SnowPlatform6" parent="Obstacle" instance=ExtResource( 2 )]
+position = Vector2( 32, 360 )
+
+[node name="SnowPlatform7" parent="Obstacle" instance=ExtResource( 2 )]
+position = Vector2( 104, 360 )
+
+[node name="SnowPlatform8" parent="Obstacle" instance=ExtResource( 2 )]
+position = Vector2( 312, 496 )
+
+[node name="SnowPlatform9" parent="Obstacle" instance=ExtResource( 2 )]
+position = Vector2( 912, 560 )
+
+[node name="SnowPlatform13" parent="Obstacle" instance=ExtResource( 2 )]
+position = Vector2( 440, 376 )
+
+[node name="SnowPlatform21" parent="Obstacle" instance=ExtResource( 2 )]
+position = Vector2( 560, 304 )
+
+[node name="SnowPlatform22" parent="Obstacle" instance=ExtResource( 2 )]
+position = Vector2( 560, 376 )
+
+[node name="SnowPlatform23" parent="Obstacle" instance=ExtResource( 2 )]
+position = Vector2( 672, 304 )
+
+[node name="SnowPlatform24" parent="Obstacle" instance=ExtResource( 2 )]
+position = Vector2( 672, 376 )
+
+[node name="SnowPlatform10" parent="Obstacle" instance=ExtResource( 2 )]
+position = Vector2( 304, 376 )
+
+[node name="SnowPlatform11" parent="Obstacle" instance=ExtResource( 2 )]
+position = Vector2( 376, 304 )
+
+[node name="SnowPlatform14" parent="Obstacle" instance=ExtResource( 2 )]
+position = Vector2( 232, 160 )
+
+[node name="SnowPlatform16" parent="Obstacle" instance=ExtResource( 2 )]
+position = Vector2( 160, 160 )
+
+[node name="SnowPlatform17" parent="Obstacle" instance=ExtResource( 2 )]
+position = Vector2( 584, 112 )
+
+[node name="SnowPlatform18" parent="Obstacle" instance=ExtResource( 2 )]
+position = Vector2( 584, 40 )
+
+[node name="SnowPlatform19" parent="Obstacle" instance=ExtResource( 2 )]
+position = Vector2( 880, 112 )
+
+[node name="SnowPlatform27" parent="Obstacle" instance=ExtResource( 2 )]
+position = Vector2( 904, 304 )
+
+[node name="SnowPlatform28" parent="Obstacle" instance=ExtResource( 2 )]
+position = Vector2( 904, 376 )
+
+[node name="SnowPlatform29" parent="Obstacle" instance=ExtResource( 2 )]
+position = Vector2( 976, 376 )
+
+[node name="SnowPlatform25" parent="Obstacle" instance=ExtResource( 2 )]
+position = Vector2( 880, 40 )
+
+[node name="SnowPlatform26" parent="Obstacle" instance=ExtResource( 2 )]
+position = Vector2( 984, 112 )
+
+[node name="SnowPlatform20" parent="Obstacle" instance=ExtResource( 2 )]
+position = Vector2( 376, 160 )
+
+[node name="SnowPlatform12" parent="Obstacle" instance=ExtResource( 2 )]
+position = Vector2( 376, 232 )
+
+[node name="SnowPlatform3" parent="Obstacle" instance=ExtResource( 2 )]
+position = Vector2( 312, 568 )
+
+[node name="SnowPlatform4" parent="Obstacle" instance=ExtResource( 2 )]
+position = Vector2( 384, 568 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 728.0
+margin_top = 192.0
+margin_right = 815.0
+margin_bottom = 206.0
+text = "LOSS REGION"
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground"]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 7 )
+
+[connection signal="start_game" from="CanvasLayer" to="GreenShip" method="_on_CanvasLayer_start_game"]
+[connection signal="body_exited" from="GameplayArea" to="GreenShip" method="_on_GameplayArea_body_exited"]
+[connection signal="body_entered" from="ObjectiveArea" to="CanvasLayer" method="_on_ObjectiveArea_body_entered"]
+[connection signal="body_entered" from="ObjectiveArea" to="ObjectiveArea" method="_on_ObjectiveArea_body_entered"]
+[connection signal="pressed" from="Button" to="GreenShip" method="_on_Button_pressed"]
